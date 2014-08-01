@@ -1,6 +1,8 @@
 {
     "name": "thibaud-dauce/eloquent-variable-model-constructor",
-    "description": "",
+    "description": "Override newFromBuilder Eloquent function to instanciate new models depending class_name attribute",
+    "license": "MIT",
+    "keywords": ["laravel", "eloquent", "inheritance", "model"],
     "authors": [
         {
             "name": "Thibaud Dauce",

@@ -1,0 +1,20 @@
+{
+    "name": "thibaud-dauce/eloquent-variable-model-constructor",
+    "description": "",
+    "authors": [
+        {
+            "name": "Thibaud Dauce",
+            "email": "thibaud@dauce.fr"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "ThibaudDauce\\EloquentVariableModelConstructor": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}

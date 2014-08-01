@@ -3,11 +3,14 @@
 trait VariableModelConstructorTrait {
 
   /**
-   * Database field indicated class name.
+   * Get class name field.
    *
-   * @var string
+   * @return string
    */
-  protected $class_name_field = 'class_name';
+  protected function getClassnameField()
+  {
+    return 'class_name';
+  }
 
   /**
    * Create a new model instance that is existing.
@@ -18,10 +21,10 @@ trait VariableModelConstructorTrait {
    */
   public function newFromBuilder($attributes = array())
   {
-    if (!isset($attributes->$class_name_field))
+    if (!isset($attributes[$this->getClassnameField()]))
       return parent::newFromBuilder($attributes);
 
-    $class = $attributes->$class_name_field;
+    $class = $attributes[$this->getClassnameField()];
     $instance = new $class;
 
     $instance->setRawAttributes((array) $attributes, true);
